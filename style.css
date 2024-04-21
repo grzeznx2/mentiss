@@ -223,10 +223,16 @@ ul {
 }
 
 .eigenschaften-list-item {
+    display: flex;
+    align-items: center;
     margin: 2rem 0;
     /* text-transform: uppercase; */
     font-size: var(--font-size-h3);
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+}
+
+.eigenschaften-list-item span {
+    margin-left: 2rem;
 }
 
 /* UTILITIES */
@@ -346,10 +352,22 @@ ul {
 
 .two-steps-image {
     width: 100%;
+    /* height: 85%; */
     height: 100%;
     object-fit: cover;
     object-position: 80%;
     pointer-events: none;
+    border: 2px solid gray;
+    /* object-position: right; */
+}
+
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80%;
+    pointer-events: none;
+    border: 2px solid gray;
     /* object-position: right; */
 }
 /* FOOTER */
@@ -398,7 +416,7 @@ ul {
 }
 
 .logo-container {
-    width: 100px;
+    width: 150px;
 }
 
 .logo-container img {
@@ -407,13 +425,16 @@ ul {
 
 .img-placeholder-1 {
     width: 100%;
-    height: 100%;
+    height: 85%;
+    /* height: 100%; */
 }
 
 .img-placeholder-2 {
     width: 100%;
-    height: 30rem;
-    border: 2px solid white;
+    height: auto;
+    /* width: 100%;
+    height: 30rem; */
+    /* border: 2px solid white; */
 }
 
 .hamburger-menu {
@@ -547,6 +568,16 @@ ul {
         align-items: center;
     }
 
+    .two-steps-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .two-steps-image {
+        width: 75%;
+    }
+
     .two-steps-column {
         width: 100%;
     }
@@ -595,6 +626,15 @@ ul {
       --font-size-p: 0.8rem; /* 12.8px */
       --button-font-size: 0.8rem; /* 12.8px */
       --button-padding: 0.35rem 0.7rem;
+    }
+
+    .magicpattern {
+        display: none;
+        visibility: hidden;
+    }
+
+    .two-steps-image {
+        width: 100%;
     }
   }
   
@@ -657,7 +697,43 @@ ul {
     background-repeat: repeat; */
   }
   
-  
+  .svgs {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin-right: 2rem;
+  }
+
+  .svgs svg {
+    position: absolute;
+  }
+
+  .svg1 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .svg2 {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7.5%
+  }
+  .svg3 {
+    top: 0%;
+    left: 20%
+  }
+  .svg4 {
+    /* top: 50%;
+    transform: translateY(-50%); */
+  }
+  .svg5 {
+    /* top: 50%;
+    transform: translateY(-50%); */
+    left: 10%
+  }
+  .svg6 {
+    /* top: 0%; */
+    left: 20%
+  }
   
   
   
